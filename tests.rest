@@ -1,0 +1,13 @@
+POST http://127.0.0.1:5000/api/register
+content-type: application/json
+{
+  "email": "test4@gmail.com",
+  "password": "password"
+}
+
+POST http://127.0.0.1:5000/api/authenticate
+content-type: application/json
+{
+  "email": "test4@gmail.com",
+  "password": "password"
+}

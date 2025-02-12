@@ -1,0 +1,45 @@
+User
+ - ID
+ - Email
+ - Password
+ - Created_at
+ - Updated_at
+ - Deleted_at : Null
+
+Keys
+ - ID
+ - USER_ID : Reference User
+ - Client_ID
+ - Secret_Key
+ - Created_at
+ - Updated_at
+ - Deleted_at : Null
+
+Model
+ - ID
+ - Name
+ - Domain - {Chat, Question/Answer, Classification}
+ - Url    - "Https://" | "File://"
+ - Client_Id
+ - Secret_key
+ - Created_at
+ - Updated_at
+ - Deleted_at : Null
+
+Session
+ - ID
+ - User_id
+ - Model_id
+ - Created_at
+ - Updated_at
+ - Deleted_at : Null
+
+Request
+ - ID
+ - Session_id
+ - Type : String, Image, Other
+ - RequestBlob
+ - ResponseText
+ - Created_at
+ - Updated_at
+ - Deleted_at : Null
